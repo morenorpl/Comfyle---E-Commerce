@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfyle</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="bg-primary-white">
+
+      <!-- header -->
+      <header class="z-30 py-4 shadow-sm bg-primary-white border-t-0 border-primary-black">
+        <div class="container grid grid-cols-3 items-center">
+          <!-- header-section 1 -->
+          <div class=" flex justify-start">
+            <!-- searchbar -->
+          <div class="w-full max-w-sm relative flex">
+            <span class="absolute left-4 top-3 text-lg text-primary-black">
+              <i class="fas fa-search"></i>
+            </span>
+            <input
+              type="text"
+              class="w-2/3 border-b-2 border-primary-black bg-transparent pl-12 py-3 pr-3 -md focus:outline-none placeholder:text-sm placeholder:italic"
+              placeholder="search your comfort piece ~"
+            />
+          </div>
+          </div>
+          <!-- header-section 2 -->
+          <div class=" flex justify-center">
+            <!-- logo -->
+          <a href="#">
+            <img src="../images/comfyle logo.svg" class="w-32" />
+          </a>
+          </div>
+          <!-- header-section 3 -->
+          <div class=" flex justify-end">
+            <!-- icons -->
+          <div class="flex items-center space-x-8">
+            <a
+              href=""
+              class="text-center text-gray-700 hover:text-primary-p transition relative"
+            >
+              <div class="text-2xl">
+                <i class='bx bxs-heart text-3xl'></i>
+              </div>
+              <div class="text-xs leading-3">Wish List</div>
+              <span
+                class="absolute right-0 -top-1 w-5 h-5-full flex items-center justify-center bg-[#FF8080] text-primary-white text-sm"
+                >8</span
+              >
+            </a>
+            <a
+              href=""
+              class="text-center text-gray-700 hover:text-primary-p  transition relative"
+            >
+              <div class="text-2xl">
+                <i class='bx bxs-cart text-3xl mr-1'></i>
+              </div>
+              <div class="text-xs leading-3">Cart</div>
+              <span
+                class="absolute -right-1 -top-1 w-5 h-5-full flex items-center justify-center bg-[#FF8080] text-primary-white text-sm"
+                >8</span
+              >
+            </a>
+            <a href=""
+            class="text-center text-gray-700 hover:text-primary-p  transition relative">
+              <div class="text-2xl">
+                <i class='bx bxs-user text-3xl'></i>
+              </div>
+              <div class="text-xs leading-3">Account</div>
+            </a>
+          </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+
+      <!-- navbar -->
+      <nav class="bg-primary-black z-30">
+        <div class="container flex w-full z-30">
+          <!-- category -->
+          <div
+            class="px-8 py-4 bg-primary-black hover:bg-primary-p hover:text-primary-white flex items-center cursor-pointer relative group z-30"
+          >
+            <span class="text-primary-white">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-2 text-primary-white">All Categories</span>
+
+            <!-- category links -->
+            <div
+              class="absolute w-full left-0 top-full bg-primary-black shadow-md py-3 divide-y divide-gray-700 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 z-30"
+            >
+              <a
+                href="#"
+                class="flex items-center px-8 py-4 hover:bg-primary-p transition"
+              >
+              <img
+                  src="../images/icons/shirt.svg"
+                  class="w-5 h-5 object-contain"
+                />
+                <span class="ml-6 text-primary-white text-sm">Tops</span> </a
+              ><a
+                href="#"
+                class="flex items-center px-8 py-4 hover:bg-primary-p transition"
+              >
+                <img
+                  src="../images/icons/pants.svg"
+                  class="w-5 h-5 object-contain"
+                />
+                <span class="ml-6 text-primary-white text-sm">Bottoms</span> </a
+              ><a
+                href="#"
+                class="flex items-center px-8 py-4 hover:bg-primary-p transition"
+              >
+                <img
+                  src="../images/icons/jacket.svg"
+                  class="w-5 h-5 object-contain"
+                />
+                <span class="ml-6 text-primary-white text-sm">Outerwear</span> </a
+              ><a
+                href="#"
+                class="flex items-center px-8 py-4 hover:bg-primary-p transition"
+              >
+                <img
+                  src="../images/icons/scarf.svg"
+                  class="w-5 h-5 object-contain"
+                />
+                <span class="ml-6 text-primary-white text-sm">Accesories</span></a
+              >
+            </div>
+            <!-- category links end -->
+          </div>
+          <!-- category end -->
+
+          <!-- nav links -->
+          <div class="flex items-center justify-between flex-grow pl-12 z-30">
+            <div class="flex items-center space-x-10 capitalize">
+              <a href="index.html" class="text-gray-300 hover:text-white transition"
+                >Home</a
+              >
+              <a href="#" class="text-gray-300 hover:text-white transition"
+                >Shop</a
+              >
+              <a href="#" class="text-gray-300 hover:text-white transition"
+                >Our Story</a
+              >
+              <a href="#" class="text-gray-300 hover:text-white transition"
+                >Our Contact</a
+              >
+            </div>
+            <a href="#" onclick="openModal()" class="text-gray-300 hover:text-white transition"
+              >Login/Register</a
+            >
+          </div>
+          <!-- nav links end -->
+        </div>
+
+        <!-- Register/Login Background -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-50 items-center hidden">
+          <!-- Modal Box -->
+          <div class="bg-primary-white rounded-none border-2 border-primary-black p-6 w-96 shadow-lg relative">
+            <!-- Close Button -->
+          <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800">&times;</button>
+
+            <!-- Title -->
+            <h2 id="modalTitle" class="text-xl font-semibold text-center mb-4">Login</h2>
+
+            <!-- Form -->
+            <form>
+            <input type="email" placeholder="Email" class="w-full p-2 border border-primary-black rounded-none mb-2 focus:outline-none focus:ring-2 focus:ring-primary-p">
+            <input type="password" placeholder="Password" class="w-full p-2 border border-primary-black rounded-none mb-2 focus:outline-none focus:ring-2 focus:ring-primary-p">
+
+            <button class="w-full bg-primary-black text-white py-2 rounded-none mt-2 hover:bg-black">Submit</button>
+          </form>
+
+          <!-- Toggle Between Sign In & Sign Up -->
+          <p class="text-center text-sm mt-3">
+            <span id="toggleText">Don’t have an account?</span>
+            <button onclick="toggleForm()" class="text-primary-p hover:underline" id="toggleButton">Sign Up</button>
+          </p>
+        </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+        
+        
+      <!-- discount text -->
+      <div class="overflow-hidden bg-primary-y border-b-0 text-primary-black font-semibold uppercase border-primary-black">
+        <div class="flex justify-center gap-10 flex-row w-[100%] py-3">
+            <p class="font-bold"><span class="font-normal">Sign Up Now &</span>   get 15% Off!!!</p>
+            <p class="font-bold"><span class="font-normal">Sign Up Now &</span>   get 15% Off!!!</p> 
+            <p class="font-bold"><span class="font-normal">Sign Up Now &</span>   get 15% Off!!!</p> 
+            <p class="font-bold"><span class="font-normal">Sign Up Now &</span>   get 15% Off!!!</p> 
+        </div>
+      </div>
+      <!-- discount text end -->
+
+      <!-- nav direction text -->
+      <div class="overflow-hidden bg-primary-white border-b-0 text-primary-black font-semibold border-primary-black">
+        <div class="flex justify-start flex-row w-[100%] py-10">
+          <p class="font-medium text-gray-500 text-base ml-20 whitespace-pre-wrap">Home   /   Shop   /   <span class=" font-bold text-lg text-primary-black">Pink Blush (H)</span></p>
+        </div>
+        <div class="h-0.5 w-[95%] ml-10 border-t-2 border-primary-black bg-primary-black"></div>
+      </div>
+      <!-- nav direction text end -->
+      
+      <!-- product -->
+        <div class="grid grid-cols-2 w-[95%] h-[100%] my-20 gap-0 mx-10">
+
+          <!-- image section -->
+          <div class="flex flex-row w-[100%] h-[100%] max-h-[100%] gap-0 border-2 border-r-0 border-primary-black text-center text-primary-white">
+            
+            <div class="flex flex-col h-[100%] max-h-[100%] w-[15%] items-center gap-0 border-r-2 border-primary-black text-center bg-[#EFF1F0] object-contain object-center [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden overflow-y-scroll justify-start text-primary-white">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-2 border-primary-black ;">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-2 border-primary-black ;">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-2 border-primary-black ;">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-2 border-primary-black ;">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-2 border-primary-black ;">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-2 border-primary-black ;">
+              <img src="../images/products/clothing3-detail.svg" class="hover:brightness-75 transition w-30 h-30 bg-primary-b border-b-0 border-primary-black ;">
+            </div>
+  
+            <div class="w-[100%] h-[100%] flex flex-col items-center text-center bg-[#EFF1F0] object-cover object-center justify-start text-primary-white">
+                <img src="../images/products/clothing3-detail.svg" class="w-full h-full bg-[#EFF1F0]">
+            </div>
+
+          </div>
+          <!-- image section end-->
+
+          <!-- text section -->
+          <div class="w-[100%] h-[100%] max-h-[100%] bg-primary-white text-primary-black border-2 border-primary-black">
+            <div class="flex flex-col items-center text-center justify-start px-5 py-10">
+              <h1 class="text-4xl py-10 uppercase font-climatecrisis">Jasmine Green ( Sweater) </h1>
+              <p class="mx-auto font-medium text-4xl w-2/3 mb-10">$45.00</p>
+              <p class="mx-auto text-base w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel similique, animi deleniti tenetur exercitationem praesentium dolorem voluptatem esse doloremque.</p>
+              <div class="flex flex-row items-center text-center justify-center px-5 gap-3 pt-20 pb-10">
+                <span class="w-12 h-12 border-2 border-primary-black bg-transparent transition hover:bg-primary-black hover:text-primary-white cursor-pointer focus:bg-primary-black p-2 [line height:0.3]">XS</span>
+                <span class="w-12 h-12 border-2 border-primary-black bg-transparent transition hover:bg-primary-black hover:text-primary-white cursor-pointer focus:bg-primary-black p-2 [line height:0.3]">S</span>
+                <span class="w-12 h-12 border-2 border-primary-black bg-transparent transition hover:bg-primary-black hover:text-primary-white cursor-pointer focus:bg-primary-black p-2 [line height:0.3]">M</span>
+                <span class="w-12 h-12 border-2 border-primary-black bg-transparent transition hover:bg-primary-black hover:text-primary-white cursor-pointer focus:bg-primary-black p-2 [line height:0.3]">L</span>
+                <span class="w-12 h-12 border-2 border-primary-black bg-transparent transition hover:bg-primary-black hover:text-primary-white cursor-pointer focus:bg-primary-black p-2 [line height:0.3]">XL</span>
+                <span class="w-12 h-12 border-2 border-primary-black bg-transparent transition hover:bg-primary-black hover:text-primary-white cursor-pointer focus:bg-primary-black p-2 [line height:0.3]">XXL</span>
+              </div>
+
+              <div class="flex flex-row items-start text-center justify-start px-5 gap-20 pb-0">
+                <div class="flex flex-col items-start text-center justify-start gap-2">
+                  <input type="number" placeholder="Quantity" class="w-[150px] p-2 border-2 border-primary-black text-sm">
+                  <span class="text-gray-500 text-xs">Stock Left: 157</span>
+                </div>
+  
+                
+                <div class="flex justify-start gap-3">
+                  <a href="#" class="py-3 px-10 bg-primary-r transition hover:bg-red-500 text-primary-white border-2 border-primary-black">Buy Now</a>
+                  <a href="#" class="py-3 px-10 bg-primary-y transition hover:bg-yellow-400 text-primary-black border-2 border-primary-black">Add Cart</a>
+                </div>
+              </div>
+
+              
+            
+            </div>
+          </div>
+          <!-- text section end-->
+        </div>
+
+      <!-- product end -->
+
+      <!-- other product -->
+      <div class="flex flex-col justify-start  pt-10 px-24 text-start items-start">
+        <h2 class="text-5xl font-medium font-climatecrisis text-primary-black uppercase mb-3">Other piece you might like</h2>
+        <p class="text-base text-gray-500 w-full mb-5">Discover timeless designs, dreamy pastel tones, and unmatched softness. Step into the world of Comfyle—where style feels as good as it looks.</p>
+      </div>
+
+      <div class="mt-10 mb-40 mx-10 border-primary-black">
+        <!-- product grid -->
+      <div class="grid grid-cols-5 gap-6 mb-10">
+
+        <!-- single products -->
+        <div class="bg-primary-white shadow border-2 border-primary-black overflow-hidden">
+
+          <!-- product image -->
+           <div class="relative border-b-4 border-primary-black group">
+            <img src="../images/products/clothing1.svg" class="w-full h-full">
+            <a href="pink-blush-hoodie.html" class="text-white text-lg w-20 h-full-sm bg-primary flex items-center justify-center">
+              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                View Details >>
+              </div>
+            </a>
+              
+            
+           </div>
+          <!-- product image end -->
+
+          <!-- product content -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="pink-blush-hoodie.html">
+              <h4 class="uppercase font-raleway font-medium text-xl mb-2 text-primary-black hover:text-gray-500 transition">Pink Blush (H)</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2">
+              <p class="text-xl text-primary font-semibold">$45.00</p>
+              
+            </div>
+            <div class="flex items-center mb-2">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+            <div class="text-xs text-gray-500 ml-2">(150)</div>
+          </div>
+          <!-- <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary-b hover:bg-transparent hover:text-primary transition">Add to cart</a> -->
+          <!-- product content end -->
+         </div>
+        </div>
+        <!-- single products end -->
+        <!-- single products -->
+        <div class="bg-primary-white shadow border-2 border-primary-black overflow-hidden">
+
+          <!-- product image -->
+           <div class="relative border-b-4 border-primary-black group">
+            <img src="../images/products/clothing2.svg" class="w-full h-full">
+            <a href="jasmine-green-sweater.html" class="text-white text-lg w-20 h-full-sm bg-primary flex items-center justify-center">
+              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                View Details >>
+              </div>
+            </a>
+              
+            
+           </div>
+          <!-- product image end -->
+
+          <!-- product content -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="jasmine-green-sweater.html">
+              <h4 class="uppercase font-raleway font-medium text-xl mb-2 text-primary-black hover:text-gray-500 transition">Jamine Green (SW)</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2">
+              <p class="text-xl text-primary font-semibold">$45.00</p>
+              
+            </div>
+            <div class="flex items-center mb-2">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+            <div class="text-xs text-gray-500 ml-2">(150)</div>
+          </div>
+          <!-- <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary-b hover:bg-transparent hover:text-primary transition">Add to cart</a> -->
+          <!-- product content end -->
+         </div>
+        </div>
+        <!-- single products end -->
+        <!-- single products -->
+        <div class="bg-primary-white shadow border-2 border-primary-black overflow-hidden">
+
+          <!-- product image -->
+           <div class="relative border-b-4 border-primary-black group">
+            <img src="../images/products/clothing3.svg" class="w-full h-full">
+            <a href="lavender-haze-hoodie.html" class="text-white text-lg w-20 h-full-sm bg-primary flex items-center justify-center">
+              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                View Details >>
+              </div>
+            </a>
+              
+            
+           </div>
+          <!-- product image end -->
+
+          <!-- product content -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="lavender-haze-hoodie.html">
+              <h4 class="uppercase font-raleway font-medium text-xl mb-2 text-primary-black hover:text-gray-500 transition">Lavender Haze (H)</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2">
+              <p class="text-xl text-primary font-semibold">$45.00</p>
+              
+            </div>
+            <div class="flex items-center mb-2">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+            <div class="text-xs text-gray-500 ml-2">(150)</div>
+          </div>
+          <!-- <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary-b hover:bg-transparent hover:text-primary transition">Add to cart</a> -->
+          <!-- product content end -->
+         </div>
+        </div>
+        <!-- single products end -->
+        <!-- single products -->
+        <div class="bg-primary-white shadow border-2 border-primary-black overflow-hidden">
+
+          <!-- product image -->
+           <div class="relative border-b-4 border-primary-black group">
+            <img src="../images/products/clothing4.svg" class="w-full h-full">
+            <a href="baby-blue-hoodie.html" class="text-white text-lg w-20 h-full-sm bg-primary flex items-center justify-center">
+              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                View Details >>
+              </div>
+            </a>
+              
+            
+           </div>
+          <!-- product image end -->
+
+          <!-- product content -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="baby-blue-hoodie.html">
+              <h4 class="uppercase font-raleway font-medium text-xl mb-2 text-primary-black hover:text-gray-500 transition">Baby Blue (H)</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2">
+              <p class="text-xl text-primary font-semibold">$45.00</p>
+              
+            </div>
+            <div class="flex items-center mb-2">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+            <div class="text-xs text-gray-500 ml-2">(150)</div>
+          </div>
+          <!-- <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary-b hover:bg-transparent hover:text-primary transition">Add to cart</a> -->
+          <!-- product content end -->
+         </div>
+        </div>
+        <!-- single products end -->
+        <!-- single products -->
+        <div class="bg-primary-white shadow border-2 border-primary-black overflow-hidden">
+
+          <!-- product image -->
+           <div class="relative border-b-4 border-primary-black group">
+            <img src="../images/products/clothing1.svg" class="w-full h-full">
+            <a href="pink-blush-hoodie.html" class="text-white text-lg w-20 h-full-sm bg-primary flex items-center justify-center">
+              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                View Details >>
+              </div>
+            </a>
+              
+            
+           </div>
+          <!-- product image end -->
+
+          <!-- product content -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="pink-blush-hoodie.html">
+              <h4 class="uppercase font-raleway font-medium text-xl mb-2 text-primary-black hover:text-gray-500 transition">Pink Blush (H)</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2">
+              <p class="text-xl text-primary font-semibold">$45.00</p>
+              
+            </div>
+            <div class="flex items-center mb-2">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+            <div class="text-xs text-gray-500 ml-2">(150)</div>
+          </div>
+          <!-- <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary-b hover:bg-transparent hover:text-primary transition">Add to cart</a> -->
+          <!-- product content end -->
+         </div>
+        </div>
+        <!-- single products end -->
+      </div>
+       <!-- product grid end -->
+      </div>
+      <!-- other product end -->
+
+      
+
+      <!-- endtext -->
+      <div class="bg-rainbow-fade text-gray-700 flex flex-col justify-center pt-20 pb-32 px-24 text-center items-center">
+        <p class="text-6xl w-[90rem] font-medium font-climatecrisis leading-normal text-primary-black uppercase">Wrap yourself in <span class="bg-primary-p px-5"> softness, </span></p>
+        <p class="text-5xl w-[90rem] font-medium font-climatecrisis leading-normal text-primary-black uppercase">because you deserve to feel good.</p>
+      </div>
+      <!-- endtext end -->
+
+
+
+      <!-- footer -->
+      <footer class="bg-gradient-to-t bg-primary-black text-gray-200 py-10 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
+      
+          <!-- Brand Section -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-200">Comfyle</h2>
+            <p class="text-sm mt-2">Comfort Meets Pastel Perfection</p>
+            <form class="mt-4 flex flex-col md:flex-row">
+              <input type="email" placeholder="Enter your email" class="w-full text-primary-black px-3 py-2 rounded-lg border focus:outline-none">
+              <button class="bg-pink-400 hover:bg-pink-500 text-white  px-4 py-2 rounded-lg mt-2 md:mt-0 md:ml-2">Subscribe</button>
+            </form>
+          </div>
+      
+          <!-- Quick Links -->
+          <div>
+            <h3 class="font-semibold text-gray-200">Quick Links</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+              <li><a href="shop.html" class="hover:text-pink-400">Shop</a></li>
+              <li><a href="#" class="hover:text-pink-400">Our Story</a></li>
+              <li><a href="#" class="hover:text-pink-400">Our Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Social Media -->
+          <div>
+            <h3 class="font-semibold text-gray-200">Follow Us</h3>
+            <div class="flex justify-center md:justify-start mt-3 space-x-4">
+              <a href="#" class="text-pink-400 hover:text-pink-600"><i class="fab fa-instagram text-2xl"></i></a>
+              <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter text-2xl"></i></a>
+              <a href="#" class="text-red-400 hover:text-red-600"><i class="fab fa-pinterest text-2xl"></i></a>
+              <a href="#" class="text-primary-p hover:text-purple-600"><i class="fab fa-tiktok text-2xl"></i></a>
+            </div>
+          </div>
+      
+          <!-- Copyright & Policies -->
+          <div>
+            <p class="text-xs text-gray-400 mt-6 md:mt-0">&copy; 2025 Comfyle. All Rights Reserved.</p>
+          </div>
+      
+        </div>
+      </footer>
+      <!-- footer end -->
+      
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById("modal").classList.remove("hidden");
+      }
+    
+      function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+      }
+    
+      function toggleForm() {
+        let title = document.getElementById("modalTitle");
+        let toggleText = document.getElementById("toggleText");
+        let toggleButton = document.getElementById("toggleButton");
+    
+        if (title.innerText === "Login") {
+          title.innerText = "Create an Account";
+          toggleText.innerText = "Already have an account?";
+          toggleButton.innerText = "Login";
+        } else {
+          title.innerText = "Login";
+          toggleText.innerText = "Don’t have an account?";
+          toggleButton.innerText = "Sign Up";
+        }
+      }
+    </script>
+  </body>
+</html>
